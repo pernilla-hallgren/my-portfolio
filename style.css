@@ -72,6 +72,17 @@ li {
     left: 0;
 }
 
+.fas {
+    font-size: 34px;
+    color: #9A9A9A;
+}
+
+.fas::after {
+    border-color: #9A9A9A;
+    color: #9A9A9A;
+}
+
+
 /* Text first page */
 .card {
     background: none;
@@ -228,49 +239,12 @@ svg {
 /* FOOTER ENDS */
 
 /* MEDIA QUERIES */
-/* @media (min-width: 576px) {
-
-    .container,
-    .container-sm {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-
-    .container,
-    .container-sm,
-    .container-md {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-
-    .container,
-    .container-sm,
-    .container-md,
-    .container-lg {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .container,
-    .container-sm,
-    .container-md,
-    .container-lg {
-        max-width: 1140px;
-    }
-} */
-
 
 /* Small devices */
 @media only screen and (max-width: 767px) {
     .first-page {
         background-image: url("img/bg/test-sm.jpg");
-        background-position: left;
+        
     }
      .card-title {
          font-size: 22px;
@@ -284,7 +258,7 @@ svg {
 } 
 
 /* Landscape mode */
-@media only screen and (orientation: landscape) and (max-width: 812px) {
+@media only screen and (orientation: landscape) and (max-width: 767px) {
     .card-1 {
         margin-top: 20px;
     }
