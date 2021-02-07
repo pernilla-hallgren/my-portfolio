@@ -6,11 +6,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    width: auto !important;
+    overflow-x: hidden !important
 }
 
 .first-page {
     height: 100vh;
-    background-image: url('img/bg/test-lg.jpg');
+    background-image: url('img/bg/header-bg-lg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -31,7 +33,7 @@ body {
 
 .nav-link {
     color: #EBEBEB;
-    margin: 30px;
+    /* margin: 30px; */
     margin-right: 100px;
 }
 
@@ -49,8 +51,7 @@ li {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
-    display: inline-block;
-    padding: 15px 20px;
+    display: inline-block; 
     position: relative;
 }
 
@@ -87,11 +88,14 @@ li {
 .card {
     background: none;
     border: none;
-    /* margin-top: 50px;    */
+       
 }
 
 .card-1 {
     margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .card-title {
@@ -113,7 +117,6 @@ li {
 
 .dividerClass {
     color: #9A9A9A;
-    width: 400px;  
     margin-left: auto;
     margin-right: auto;
 }
@@ -243,8 +246,7 @@ svg {
 /* Small devices */
 @media only screen and (max-width: 767px) {
     .first-page {
-        background-image: url("img/bg/test-sm.jpg");
-        
+        background-image: url("img/bg/header-bg-sm-test.jpg");
     }
      .card-title {
          font-size: 22px;
@@ -258,7 +260,10 @@ svg {
 } 
 
 /* Landscape mode */
-@media only screen and (orientation: landscape) and (max-width: 767px) {
+@media only screen and (orientation: landscape) {
+    .first-page {
+        background-image: url("img/bg/header-bg-md.jpg");
+    }
     .card-1 {
         margin-top: 20px;
     }
@@ -278,13 +283,13 @@ svg {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .first-page {
-        background-image: url("img/bg/test-md.jpg");        
+        background-image: url("img/bg/header-bg-md.jpg");        
     }    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .first-page {
-        background-image: url('img/bg/test-lg.jpg');
+        background-image: url('img/bg/header-bg-lg.jpg');
     }
 }
