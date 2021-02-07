@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.first-page {
+    height: 100vh;
+    background-image: url('img/background.svg');
+    background-color: #161A1B;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.btn {
+    color: #949494;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    padding: 8px 20px;
+}
+
+/* NAVBAR */
+.collapse .navbar-collapse {
+    color: #EBEBEB;
+}
+
+.nav-link {
+    color: #EBEBEB;
+    margin: 30px;
+    margin-right: 100px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* Text first page */
+.card {
+    background: none;
+    border: none;
+    /* margin-top: 50px;    */
+}
+
+.card-1 {
+    margin-top: 150px;
+}
+
+.card-title {
+    font-weight: 300;
+    font-size: 26px;
+    color: #9A9A9A;
+}
+
+.card-text {
+    color: #EBEBEB;
+    font-size: 36px;
+}
+
+.card-body-text {
+    font-weight: 300;
+    font-size: 24px;
+    color: #9A9A9A;
+}
+
+.dividerClass {
+    color: #9A9A9A;
+    width: 400px;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a .btn .btn-outline-light .btn-lg {
+    margin-right: 100px;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+
+/* End text first page */
+
+/* SYMBOLS */
+.symbols {
+    margin-top: 25px;
+}
+
+.symbols a {
+    text-decoration: none;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.bi {
+    margin: 15px;
+    fill: #9A9A9A;
+}
+
+.bi:hover {
+    fill: #f1f0f0;
+}
+/* END SYMBOLS */       
+
+/* ABOUT */
+.about-page,
+.contact-page {
+    background-color: #161A1B;
+    height: 100%;
+    color: #949494;
+}
+
+.about__content {
+    font-size: 18px;
+}
+
+.project__details {
+    font-size: 14px;
+}
+
+.container {
+    padding-top: 150px;
+}
+.vl-4 {
+    border-left: 0.3px solid #9A9A9A;
+    height: 200px;
+    position: absolute;
+    left: 15%;
+    margin-left: -3px;
+    top: 749px;
+}
+
+#signature {
+    font-family: 'Dr Sugiyama', cursive;
+    font-size: 28px;
+}
+
+.btn__icon-left {
+    fill: #949494;
+}
+/* ABOUT ENDS */
+
+/* PORTFOLIO */
+.portfolio {
+    background-color: #161A1B;
+    height: 100%;
+    color: #949494;
+}
+
+.icon-earth {
+    fill: #949494;
+}
+
+.project { 
+    transition: box-shadow 0.15s ease-in-out, border 0.15s ease-in-out,
+    transform .2s ease-in-out;
+}
+
+.project:hover,
+.project:focus,
+.project:active {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.09);
+    transform: translateY(-0.25rem);
+    border-color: #cfcfcf;
+}
+/* PORTFOLIO ENDS */
+
+/* CONTACT */
+.email {
+     text-decoration: none; 
+     color: #9A9A9A
+}
+
+.email:hover {
+    color: #f1f0f0;
+}
+/* CONTACT ENDS */
+
+/* FOOTER */
+.footer {
+    background-color: #161A1B;
+    height: 30%;
+    color: #949494;
+    margin-top: 50px;
+}
+
+.footer__social-heading {
+    font-size: 18px;
+}
+/* FOOTER ENDS */
