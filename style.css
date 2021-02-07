@@ -12,7 +12,7 @@ body {
 
 .first-page {
     height: 100vh;
-    background-image: url('img/bg/footer-bg-lg.jpg'); 
+    background-image: url('img/bg/footer-bg-sm.jpg'); 
     background-color: #161A1B;
     background-repeat: no-repeat;
     background-position: center center;
@@ -262,11 +262,29 @@ svg {
 
 /* MEDIA QUERIES */
 
+@media (min-resolution: 192dpi) {
+    .first-page {
+        background-image: url("img/bg/footer-bg-md.jpg");
+    }
+}
+
+/* Above 1600px */
+@media only screen and (min-width: 100em) {
+    .first-page {
+        background-image: url("img/bg/footer-bg-md.jpg");
+    }
+}
+
+/* Above 1920px */
+@media only screen and (min-width: 120em) {
+    .first-page {
+        background-image: url("img/bg/footer-bg-md.jpg");
+    }
+}
+
+
 /* Small devices */
 @media only screen and (max-width: 767px) {
-    .first-page {
-        background-image: url("img/bg/footer-bg-sm.jpg");     
-    }
      .card-title {
          font-size: 22px;
      }
@@ -301,15 +319,15 @@ svg {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .first-page {
         background-image: url("img/bg/footer-bg-md.jpg");        
     }    
-}
+} */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
     .first-page {
         background-image: url('img/bg/footer-bg-lg.jpg');
     }
-}
+} */
