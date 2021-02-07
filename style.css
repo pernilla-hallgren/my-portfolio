@@ -13,13 +13,11 @@ body {
 .first-page {
     height: 100vh;
     background-image: url('img/bg/header-bg-lg.jpg');
+    background-color: #161A1B;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
 }
 
 .btn {
@@ -248,8 +246,7 @@ svg {
 /* Small devices */
 @media only screen and (max-width: 767px) {
     .first-page {
-        background-image: url("img/bg/header-bg-sm-test.jpg");
-        
+        background-image: url("img/bg/header-bg-sm-test2.jpg");     
     }
      .card-title {
          font-size: 22px;
@@ -263,23 +260,24 @@ svg {
 } 
 
 /* Landscape mode */
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width: 812px) {
     .first-page {
         background-image: url("img/bg/header-bg-md.jpg");
     }
-    .card-1 {
-        margin-top: 20px;
+    .card {
+        margin-top: 5px;
     }
       .card-title {
-          font-size: 22px;
+          font-size: 18px;
       }
 
       .card-text {
-          font-size: 32px;
+          font-size: 28px;
       }
 
       .card-body-text {
-          font-size: 20px;
+          font-size: 16px;
+          margin-bottom: 0px;
       }
 }
 
