@@ -12,11 +12,14 @@ body {
 
 .first-page {
     height: 100vh;
-    background-image: url('img/bg/header-bg-sm-test.jpg');
+    background-image: url('img/bg/header-bg-lg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .btn {
@@ -246,6 +249,7 @@ svg {
 @media only screen and (max-width: 767px) {
     .first-page {
         background-image: url("img/bg/header-bg-sm-test.jpg");
+        
     }
      .card-title {
          font-size: 22px;
