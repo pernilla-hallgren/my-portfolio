@@ -12,7 +12,7 @@ body {
 
 .first-page {
     height: 100vh;
-    background-image: url('img/bg/header-bg-lg.jpg');
+    background-image: url('img/bg/header-bg-sm-test.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -88,11 +88,10 @@ li {
 .card {
     background: none;
     border: none;
-       
+    margin-top: 120px;
 }
 
 .card-1 {
-    margin-top: 120px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
